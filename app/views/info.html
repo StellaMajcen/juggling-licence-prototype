@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+<!-- Adds a class to increase vertical spacing for pages without a back button -->
+{% set mainClasses = "govuk-main-wrapper--l" %}
+
+{% block pageTitle %}
+  Task list
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Two best juggling schools in London
+      </h1>
+
+
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <a class="app-task-list__task-name" href="https://www.oddballs.co.uk/circus-spinning-juggling-workshops" aria-describedby="eligibility-completed">
+                Oddballs
+              </a>
+              <!-- <strong class="govuk-tag app-task-list__task-completed" id="eligibility-completed">Completed</strong> -->
+            </li>
+            <li class="app-task-list__item">
+              <a class="app-task-list__task-name" href="https://www.nationalcircus.org.uk" aria-describedby="read-declaration-completed">
+                Home National Centre for Circus Art
+              </a>
+              <!-- <strong class="govuk-tag app-task-list__task-completed" id="read-declaration-completed">Completed</strong> -->
+            </li>
+          </ul>
+
+  <h2>Request place at</h2>
+
+<div class="form-group">
+  <label class="form-label" for="select-box">Select your school</label>
+  <select class="form-control" id="select-box" name="select-box">
+    <option>GOV.UK elements option 1</option>
+    <option>GOV.UK elements option 2</option>
+  </select>
+</div>
+
+
+
+    </div>
+  </div>
+
+{% endblock %}
